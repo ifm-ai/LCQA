@@ -1,0 +1,9 @@
+# Versions this was run with. Install torch separately to match your CUDA/ROCm build.
+pandas==2.3.3
+pyarrow==23.0.1
+tiktoken==0.9.0
+semantic-text-splitter==0.29.0
+tree-sitter-python==0.25.0
+transformers==4.57.1
+fasttext==0.9.3
+detoxify==0.5.2

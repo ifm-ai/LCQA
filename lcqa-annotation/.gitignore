@@ -1,0 +1,11 @@
+# Classifier weights: symlink or set LCQA_MODELS_DIR (see README)
+models/
+
+# Output of the README's example commands, written into this directory
+/annotated.jsonl
+/kept.jsonl
+/rejected.jsonl
+/pairs.jsonl
+
+__pycache__/
+*.py[cod]

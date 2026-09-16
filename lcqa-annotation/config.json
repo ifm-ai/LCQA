@@ -1,0 +1,34 @@
+{
+  "section_max_tokens": 512,
+  "tokenizer_model": "gpt-3.5-turbo",
+
+  "default_splitter": "semantic",
+  "splitter_by_subset": {
+    "arxiv": "markdown_only",
+    "pg19": "markdown_only",
+    "pubmed_central": "markdown_only",
+    "phil_papers": "markdown",
+    "s2orc_fulltext": "markdown",
+    "megamath": "code_only",
+    "stackexchange": "code"
+  },
+
+  "document_filters": {
+    "avg_toxicity_scores": {"max": 0.2},
+    "avg_fineweb_edu_scores_bucket": {"min": 17},
+    "avg_eli5_scores_bucket": {"min": 10},
+    "avg_preselect_scores_bucket": {"min": 10},
+    "jais_token_count": {"min": 16384}
+  },
+
+  "snippet_filters": {
+    "token_count": {"min": 256, "max": 1024},
+    "fineweb_edu_scores_bucket": {"min": 17},
+    "eli5_scores_bucket": {"min": 10},
+    "preselect_scores_bucket": {"min": 10},
+    "toxicity_scores": {"max": 0.1}
+  },
+  "snippets_per_doc": 4,
+  "min_snippets_per_doc": 2,
+  "random_seed": 42
+}

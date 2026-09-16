@@ -1,0 +1,6 @@
+models/
+__pycache__/
+*.py[cod]
+*.out
+*.err
+.DS_Store
